@@ -1,0 +1,207 @@
+
+/* ----- root ----- */
+body{
+  margin: 0;
+  min-width: 600px;
+}
+.App {
+  text-align: center;
+}
+
+
+.navbar_container{
+  /* background-color: red; */
+  margin: 0;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+}
+.navbar_container h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 180px;
+  margin: 0;
+  border-right: 1px solid black;
+}
+.navbar_container h1 a{
+  text-decoration: none;
+  color: black;
+}
+.navbar_container h1 a:hover{
+  text-shadow: 0 0 50px gold;
+}
+.navbar_container button{
+  height: 100%;
+  width: 200px;
+  font-size: 24px;
+  border: none;
+  background-color: transparent;
+  color: blue;
+  cursor: pointer;
+}
+.navbar_container button:hover{
+  color: red;
+  font-weight: bold;
+  text-shadow: 0 0 50px red;
+}
+
+
+/* -------------------- Color Picker - Section 1 -------------------- */
+.section1_container{
+  margin: 40px auto 0;
+  height: 250px;
+  width: 90%;
+  /* background-color: red; */
+  /* border-bottom: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+/* ---------- Color Picker Header ---------- */
+.section1_container h1{
+  margin: 0;
+  text-shadow: 2px 2px 4px grey;
+}
+
+/* ---------- Color Picker Input ---------- */
+.colorInput_container{
+  height: 70px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.colorInput_container input{
+  width: 250px;
+  height: 35px;
+  font-size: 18px;
+  text-indent: 6px;
+  border-radius: 6px;
+}
+
+.colorInput_container p{
+  color: red;
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ---------- Color Picker Button ---------- */
+.section1_container button{
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.section1_container button:hover{
+  box-shadow: 3px 3px 4px grey;
+}
+.section1_container button:active{
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+
+
+/* -------------------- Reminder Pro - Section 2 -------------------- */
+.section2_container{
+  min-width: 400px;
+  width: 60%;
+  max-width: 900px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ---------- Task Input ---------- */
+.taskInput_container{
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 20px;
+}
+.taskInput_container h1{
+  text-shadow: 2px 2px 4px grey;
+}
+
+.taskInput_addTask{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40px;
+}
+.taskInput_addTask button{
+  height: 100%;
+  width: 120px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(60, 189, 32);
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.taskInput_addTask button:hover{
+  border: 1px solid rgb(60, 189, 32);
+  background-color: white;
+  color: rgb(60, 189, 32);
+}
+
+.addTask_inputText{
+  width: 25%;
+  height: 90%;
+  font-size: 18px;
+  text-indent: 8px;
+}
+
+.addTask_inputDate{
+  width: 35%;
+  height: 90%;
+  font-size: 18px;
+}
+
+
+/* ---------- Task List ---------- */
+.taskList_container button{
+  width: 150px;
+  height: 35px;
+  background-color: rgb(249, 94, 94);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.taskList_container button:hover{
+  border: 1px solid rgb(249, 94, 94);
+  background-color: white;
+  color: rgb(249, 94, 94);
+}
+
+
+/* ---------- Task ---------- */
+.task_container{
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  background-color: whitesmoke;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  text-indent: 25px;
+}
+.task_container h2, .task_container p{
+  margin: 0;
+}
